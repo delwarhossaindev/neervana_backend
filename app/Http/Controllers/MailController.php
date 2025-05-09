@@ -14,14 +14,15 @@ class MailController extends Controller
     public function send_mail(Request $request)
     {
         $details = $request->validate([
-            'name' => 'required|string',
-            'email' => 'required|email',
-            'message' => 'required|string',
-            'subject' => 'required|string',
+            'name' => 'nullable|string',
+            'email' => 'nullable|email',
+            'message' => 'nullable|string',
+            'subject' => 'nullable|string',
+            'address' => 'nullable|string',
         ]);
 
         try {
-            Mail::to($details['email'])->send(new ContactMail($details));
+            Mail::to('admin@neervana.org')->send(new ContactMail($details));
             return response()->json(['message' => 'Email sent successfully.'], 200);
         } catch (Exception $e) {
             return response()->json([
