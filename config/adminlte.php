@@ -315,15 +315,47 @@ return [
 
         ['header' => 'Main Menus'],
         [
-            'text' => 'profile',
-            'url' => 'admin/settings',
+            'text' => 'Events',
+            'url' => '#',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
+            'text' => 'Meeting',
+            'url' => '#',
             'icon' => 'fas fa-fw fa-lock',
         ],
+
+        ['header' => 'User Management'],
+        // [
+        //     'text' => 'Dashboard',
+        //     'url' => 'home',
+        //     'icon' => 'fas fa-fw fa-tachometer-alt',
+        // ],
+        [
+            'text' => 'Users',
+            'url' => 'users',
+            'icon' => 'fas fa-fw fa-users',
+        ],
+        // [
+        //     'text' => 'Roles',
+        //     'url' => 'roles',
+        //     'icon' => 'fas fa-fw fa-user-tag',
+        // ],
+        // [
+        //     'text' => 'Permissions',
+        //     'url' => 'permissions',
+        //     'icon' => 'fas fa-fw fa-user-shield',
+        // ],
+        // [
+        //     'text' => 'profile',
+        //     'url' => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-user',
+        // ],
+        // [
+        //     'text' => 'change_password',
+        //     'url' => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-lock',
+        // ],
 
 
     ],

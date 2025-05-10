@@ -47,6 +47,7 @@
 {{-- Add common Javascript/Jquery code --}}
 
 @push('js')
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 <script>
 
     $(document).ready(function() {
@@ -59,7 +60,9 @@
 {{-- Add common CSS customizations --}}
 
 @push('css')
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
 <style type="text/css">
+
 
     {{-- You can add AdminLTE customizations here --}}
     /*
